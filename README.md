@@ -16,6 +16,7 @@ Including:
 
 ## TODO
 * Add argument parses
+* Use wandb
 * Implement NeRF
 * Implement SR3(diffusion involved)
 * Implement Feature Transfer Models
@@ -50,3 +51,33 @@ Including:
 * https://github.com/lucidrains/vit-pytorch
 * https://github.com/abarankab/DDPM
 * https://github.com/timbmg/VAE-CVAE-MNIST
+
+## Settings
+### Datasets
+Datasets should be download to `data` directory as the datasets implementation files(.py in `datasets`) require.
+Including: SVHN, RealSR, CelebA
+### Requirements
+Pytorch, cudatoolkit, cuDNN, numpy, pandas, scikit-image, matplotlib, pillow, tqdm
+
+## Some of the results
+### Vanilla VAE
+CelebA:
+
+![Vanilla VAE](./results/Vanilla_VAE.png)
+### DCGAN
+CelebA:
+
+<img src="./results/DCGAN_3.png" alt="DCGAN_3" width="250"/>
+<img src="./results/DCGAN_1.png" alt="DCGAN_1" width="250"/>
+<img src="./results/DCGAN_2.png" alt="DCGAN_2" width="250"/>
+
+
+### SRGAN
+RealSR: Low Resolution | Super Resolution (4x) | High Resolution (4x)
+
+![SRGAN_1](./results/SRGAN_1.png)
+![SRGAN_2](./results/SRGAN_2.png)
+![SRGAN_3](./results/SRGAN_3.png)
+![SRGAN_4](./results/SRGAN_4.png)
+![SRGAN_5](./results/SRGAN_5.png)
+![SRGAN_6](./results/SRGAN_6.png)
